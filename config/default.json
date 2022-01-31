@@ -1,0 +1,4 @@
+{
+    "mongoURL":"mongodb+srv://atharva:choconiumz@cluster0.jrkkf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    "jwtSecret":"mysecrettoken"
+}
