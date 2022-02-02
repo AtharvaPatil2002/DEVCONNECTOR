@@ -35,17 +35,17 @@ router.post(
         r: 'pg',
         d: 'mm',
       });
-      user = new User({
+      userr = new User({
         name,
         email,
         password,
         avatar,
       });
       const salt = await bcrypt.genSalt(10);
-      user.password = await bcrypt.hash(password, salt);
-      await user.save();
+      userr.password = await bcrypt.hash(password, salt);
+      await userr.save();
       const payload = {
-        user: {
+        userr: {
           id: user.id,
         },
       };
